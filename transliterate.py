@@ -1,7 +1,4 @@
-Javohir Python, [10.01.2022 21:01]
 translitirate.py
-
-
 # -*- coding: utf-8 -*-
 import re
 import sys
@@ -130,8 +127,6 @@ TS_WORDS = {
     'gidromexaniza(ts)iya': 'гидромеханизация',
     'gidrostan(s)iya': 'гидростанция',
     'gidroelektrostan(s)iya': 'гидроэлектростанция',
-
-Javohir Python, [10.01.2022 21:01]
 'giperinflya(ts)iya': 'гиперинфляция',
     'gipo(ts)entr': 'гипоцентр',
     'gli(ts)erin': 'глицерин',
@@ -244,8 +239,6 @@ Javohir Python, [10.01.2022 21:01]
     'irriga(ts)iya': 'ирригация',
     'kalkulya(ts)iya': 'калькуляция',
     'kal(s)iy': 'кальций',
-
-Javohir Python, [10.01.2022 21:01]
 'kanaliza(ts)iya': 'канализация',
     'kan(s)eliyariya': 'канцелиярия',
     'kan(s)erogen': 'канцероген',
@@ -358,8 +351,6 @@ Javohir Python, [10.01.2022 21:01]
     'metalliza(ts)iya': 'металлизация',
     'metiza(ts)iya': 'метизация',
     'mexaniza(ts)iya': 'механизация',
-
-Javohir Python, [10.01.2022 21:01]
 'mexaniza(ts)iyalash': 'механизациялаш',
     'mexaniza(ts)iyalashmoq': 'механизациялашмоқ',
     'mexani(ts)izm': 'механицизм',
@@ -475,8 +466,6 @@ Javohir Python, [10.01.2022 21:01]
     'radia(ts)ion': 'радиацион',
     'radia(ts)iya': 'радиация',
     'radioloka(ts)iya': 'радиолокация',
-
-Javohir Python, [10.01.2022 21:01]
 'radionaviga(ts)iya': 'радионавигация',
     'radiostan(s)iya': 'радиостанция',
     'rane(ts)': 'ранец',
@@ -591,8 +580,6 @@ Javohir Python, [10.01.2022 21:01]
     'tenden(s)ioz': 'тенденциоз',
     'tenden(s)iozlik': 'тенденциозлик',
     'tenden(s)iya': 'тенденция',
-
-Javohir Python, [10.01.2022 21:01]
 'tepli(ts)a': 'теплица',
     'teploizolya(ts)iya': 'теплоизоляция',
     'termoizolya(ts)iya': 'термоизоляция',
@@ -720,8 +707,6 @@ Javohir Python, [10.01.2022 21:01]
     'ekspedi(ts)iyachi': 'экспедициячи',
     'ekspluata(ts)iya': 'эксплуатация',
     'ekspluata(ts)iyachi': 'эксплуатациячи',
-
-Javohir Python, [10.01.2022 21:01]
 'ekspozi(ts)iya': 'экспозиция',
     'ekspropria(ts)iya': 'экспроприация',
     'ekstradi(ts)iya': 'экстрадиция',
@@ -865,8 +850,6 @@ SOFT_SIGN_WORDS = {
     'buldozerchi': 'бульдозерчи',
     'bulon': 'бульон',
     'byulleten': 'бюллетень',
-
-Javohir Python, [10.01.2022 21:01]
 'valeryanka': 'валерьянка',
     'valvatsiya': 'вальвация',
     'vals': 'вальс',
@@ -1012,8 +995,6 @@ Javohir Python, [10.01.2022 21:01]
     'modeler': 'модельер',
     'molbert': 'мольберт',
     'monastir': 'монастирь',
-
-Javohir Python, [10.01.2022 21:01]
 'monokultoura': 'монокультоура',
     'motel': 'мотель',
     'multi-': 'мульти-',
@@ -1161,8 +1142,6 @@ Javohir Python, [10.01.2022 21:01]
     'folklorist': 'фольклорист',
     'folkloristika': 'фольклористика',
     'folklorchi': 'фольклорчи',
-
-Javohir Python, [10.01.2022 21:01]
 'folklorshunos': 'фольклоршунос',
     'folklorshunoslik': 'фольклоршунослик',
     'fonar': 'фонарь',
@@ -1303,8 +1282,7 @@ def to_cyrillic(text):
             text,
             flags=re.U
         )
-
-Javohir Python, [10.01.2022 21:01]
+        
 def replace_exception_words(m):
         """Replace ц (or э) only leaving other characters unchanged"""
         return '%s%s%s' % (
